@@ -1,8 +1,12 @@
 package HomeWorkL07;
 
+import java.util.Scanner;
+
 public class Task4Version3 {
     public static void main(String[] args) {
-        numbersToN(10);
+        Scanner scanner = new Scanner(System.in);
+        int a = scanner.nextInt();
+        numbersToN(a);
 
     }
 
