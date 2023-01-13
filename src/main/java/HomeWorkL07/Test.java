@@ -2,6 +2,7 @@ package HomeWorkL07;
 
 public class Test {
     public static void main(String[] args) {
+        math(10, 10);
 
         int[][] numbers = new int[3][4];
 
@@ -13,6 +14,10 @@ public class Test {
                 System.out.printf("%d  %d, %d\n",i, j, numbers[i] [j]);
             }
         }
+    }
+    public static void math(int a, int b){
+        int c = a*b;
+        System.out.println(c);
     }
 }
 
