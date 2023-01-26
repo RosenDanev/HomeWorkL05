@@ -3,6 +3,7 @@ package HomeWorkL07;
 public class Test {
     public static void main(String[] args) {
         math(10, 10);
+        System.out.println(add(1,1));
 
         int[][] numbers = new int[3][4];
 
@@ -18,6 +19,9 @@ public class Test {
     public static void math(int a, int b){
         int c = a*b;
         System.out.println(c);
+    }
+    public static int add(int a, int b){
+        return a+b;
     }
 }
 

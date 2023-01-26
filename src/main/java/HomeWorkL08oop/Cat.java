@@ -1,16 +1,20 @@
 package HomeWorkL08oop;
 
-public class Cat extends Animal{
+public class Cat extends Animal {
     private String breed;
 
-    public void setBreed(String breed) {
-        if (!breed.isEmpty() && !breed.isBlank()) {
-            this.breed = breed;
-        }else{
-            System.out.println("ERROR: Invalid input data for Breed");
-        }
-
+    public Cat (int age, String name, float weight, boolean hasTail, String breed) {
+        super(age, name, weight, hasTail);
+        setBreed(breed);
     }
+        private void setBreed (String breed){
+            if (!breed.isEmpty() && !breed.isBlank()) {
+                this.breed = breed;
+            } else {
+                System.out.println("ERROR: Invalid input data for Breed");
+            }
+
+        }
 
     public void mau() {
         System.out.println("mau mau");

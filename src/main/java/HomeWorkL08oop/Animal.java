@@ -9,6 +9,13 @@ public class Animal {
     private boolean hasTail;
     private Address address;
 
+    public Animal(int age, String name, float weight, boolean hasTail){
+        setAge(age);
+        setName(name);
+        setWeight(weight);
+        setHasTail(hasTail);
+    }
+
     public Address getAddress() {
         return address;
     }
@@ -42,7 +49,7 @@ public class Animal {
         return name;
     }
 
-    public void setName(@NotNull String name) {
+    private void setName(@NotNull String name) {
         if (!name.isEmpty() && !name.isBlank()) {
             this.name = name;
         }else{

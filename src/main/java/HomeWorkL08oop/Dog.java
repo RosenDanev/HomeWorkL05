@@ -2,15 +2,20 @@ package HomeWorkL08oop;
 
 public class Dog extends Animal {
     private String breed;
-    private int age;
-    private String name;
-    private float weight;
+    public Dog (int age, String name, float weight, boolean hasTail, String breed){
+        super(age, name, weight, hasTail);
+        setBreed(breed);
+    }
+    public Dog(Dog dog){
+       super(dog.getAge(), dog.getName(), dog.getWeight(), dog.HasTail());
+       setBreed(dog.getBreed());
+    }
 
     public String getBreed() {
         return breed;
     }
 
-    public void setBreed(String breed) {
+    private void setBreed(String breed) {
         if (!breed.isEmpty() && !breed.isBlank()) {
             this.breed = breed;
         }else{
